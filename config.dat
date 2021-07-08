@@ -1,0 +1,4 @@
+ServerPort = 2003
+HeadwavePort = 2004
+HeadwaveOutputDirectory = C:/HW-Data
+HeadwaveWorkspaceDirectory = C:/HW-Workspaces
