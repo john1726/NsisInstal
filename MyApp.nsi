@@ -13,7 +13,6 @@
 !define COMPANY_NAME "MyCompany"
 !define FLEX_LM "FlexLM"        
 !define FLEX_DIR "FlexSQI"            
-!define LANG_ENGLSH "English" 
 !define PRODUCT_NAME "MyApp"
 !define PRODUCT_VERSION "${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION}.${BUILD_VERSION}"
 !define SETUP_NAME "MyAppSetup.exe"
@@ -47,7 +46,8 @@ File "/oname=${Destination}" "$%TEMP%\Uninst.exe"
 !macroend
 
 !macro DeclareLanguages
-!insertmacro MUI_LANGUAGE ${LANG_ENGLSH}
+	# Define languages that the installer has
+	!insertmacro MUI_LANGUAGE "English"
 !macroend
 
 !ifndef GENRATINGUNINST
