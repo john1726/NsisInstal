@@ -86,7 +86,8 @@ FunctionEnd
 !define MUI_PAGE_CUSTOMFUNCTION_PRE onFirstDirPre
 !define MUI_DIRECTORYPAGE_VARIABLE $MyAppInstallDir
 !insertmacro MUI_PAGE_DIRECTORY
- 
+
+## This is the title on the FlexLM Directory page 
 !define MUI_DIRECTORYPAGE_TEXT_TOP "$(MUI_DIRECTORYPAGE_TEXT_TOP_B)"
 !define MUI_PAGE_HEADER_TEXT "FlexLM Configuration"
 !define MUI_PAGE_HEADER_SUBTEXT "Select the folder in which to install FlexLM."
@@ -97,6 +98,9 @@ FunctionEnd
 
 !define MUI_PAGE_CUSTOMFUNCTION_LEAVE DeleteSectionsINI
 !insertmacro MUI_PAGE_FINISH
+!insertmacro DeclareLanguages
+
+;--------------------------------
 
 
 LangString MUI_DIRECTORYPAGE_TEXT_TOP_A ${LANG_ENGLiSH} "Setup will install \
